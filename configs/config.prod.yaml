@@ -1,0 +1,19 @@
+env: prod
+port: 8000
+log_level: INFO
+
+gaode:
+  enabled: true
+  # 生产环境请始终通过环境变量 GAODE_API_KEY / GAODE_APP_SECRET 注入密钥，
+  # 不要将真实密钥写入配置文件或仓库。
+  app_key: ""
+  app_secret: ""
+  base_url: "https://restapi.amap.com"
+
+meituan:
+  enabled: true
+  # 生产环境请通过环境变量 MEITUAN_APP_KEY / MEITUAN_APP_SECRET 注入密钥。
+  app_key: ""
+  app_secret: ""
+  base_url: "https://api.meituan.com"
+

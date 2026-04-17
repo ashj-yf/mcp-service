@@ -1,0 +1,19 @@
+env: dev
+port: 8000
+log_level: DEBUG
+
+gaode:
+  enabled: false
+  # 请在本地开发环境中通过环境变量 GAODE_API_KEY 覆盖 app_key，
+  # 或者直接在此文件中填写测试用 app_key。
+  app_key: ""
+  app_secret: ""
+  base_url: "https://restapi.amap.com"
+
+meituan:
+  enabled: false
+  # 推荐通过环境变量 MEITUAN_APP_KEY / MEITUAN_APP_SECRET 配置密钥。
+  app_key: ""
+  app_secret: ""
+  base_url: "https://api.meituan.com"
+
